@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    cadeia nome
+    real port, mat, conh, media
+
+    escreva("Nome do cantidato: ")
+    leia(nome)
+    escreva("Nota de português: ")
+    leia(port)
+    escreva("Nota de matemática: ")
+    leia(mat)
+    escreva("Nota de conhecimentos gerais: ")
+    leia(conh)
+
+    media = (port + mat + conh) / 3
+    escreva("\nMédia: ", media)
+    se (media > 7 e port >= 5 e mat >=5 e conh >=5){
+      escreva("\nCandidato aprovado")
+    }senao
+      escreva("\nCandidato reprovado")
+  }  
+}
+
