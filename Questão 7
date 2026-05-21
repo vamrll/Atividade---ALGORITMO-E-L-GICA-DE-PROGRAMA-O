@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    cadeia nome, prodCaro
+    real preco, maiorPreco
+    inteiro contador
+
+    contador = 1
+    maiorPreco = 0
+    enquanto(contador <= 5){
+      escreva("\nDigite o nome do produto: ")
+      leia(nome)
+      escreva("Digite o preço do produto: ")
+      leia(preco)
+      se (preco > maiorPreco){
+        maiorPreco = preco
+        prodCaro = nome
+      }
+      contador = contador + 1
+      escreva("\nProduto mais caro: ", prodCaro)
+      escreva("\nValor do produto mais caro: ", maiorPreco)
+    }
+  }
+}
