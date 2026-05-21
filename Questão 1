@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, subs
+
+    escreva("Digite o valor de A: ")
+    leia(a)
+    escreva("Digite o valor de B: ")
+    leia(b)
+
+    subs = a
+    a = b
+    b = subs
+    
+    escreva("\nValor novo de A: ", a)
+    escreva("\nValor novo de B: ", b)
+  }
+}
